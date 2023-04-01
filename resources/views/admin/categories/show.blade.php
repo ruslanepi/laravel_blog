@@ -56,7 +56,7 @@
                                 <form action="{{route('admin.category.destroy', $category->id)}}" method="post" >
                                     @csrf
                                     @method('delete')
-                                    <input type="submit" value="Удалить">
+                                    <input type="submit" value="Удалить" class="btn btn-danger">
                                 </form>
 
                             </div>

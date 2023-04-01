@@ -14,7 +14,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-8">
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body table-responsive p-0">
@@ -30,13 +30,13 @@
                                     <tr>
                                         <td>{{$category->id}}</td>
                                         <td>{{$category->title}}</td>
-                                        <td><a href="{{route('admin.category.show', $category->id)}}">Подробнее</a></td>
-                                        <td><a href="{{route('admin.category.edit', $category->id)}}">Изменить</a></td>
+                                        <td><a href="{{route('admin.category.show', $category->id)}}" class="btn">Подробнее</a></td>
+                                        <td><a href="{{route('admin.category.edit', $category->id)}}" class="btn btn-primary">Изменить</a></td>
                                         <td>
                                             <form action="{{route('admin.category.destroy', $category->id)}}" method="post" >
                                                 @csrf
                                                 @method('delete')
-                                                <input type="submit" value="Удалить">
+                                                <input type="submit" class="btn btn-danger" value="Удалить">
                                             </form></td>
                                     </tr>
                                 @endforeach
