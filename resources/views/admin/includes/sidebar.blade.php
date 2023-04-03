@@ -44,6 +44,16 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{route('admin.user.index')}}" class="nav-link">
+                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <p>
+                            Пользователи
+                            <span class="badge badge-info right">3</span>
+                        </p>
+                    </a>
+                </li>
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
